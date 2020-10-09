@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simón dice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btns-container">
+        <div id="btn-green" class="btn-container"><svg class="btn" viewBox="0 0 190 190"><use class="btn-green" href="#svg-btn" data-color="green"></use></svg></div>
+        <div id="btn-red" class="btn-container"><svg class="btn" viewBox="0 0 190 190"><use class="btn-red" href="#svg-btn" data-color="red"></use></svg></div>
+        <div id="btn-yellow" class="btn-container"><svg class="btn" viewBox="0 0 190 190"><use class="btn-yellow" href="#svg-btn" data-color="yellow"></use></svg></div>
+        <div id="btn-blue" class="btn-container"><svg class="btn" viewBox="0 0 190 190"><use class="btn-blue" href="#svg-btn" data-color="blue"></use></svg></div>
+    </div>
+    <lable id="btn-start-container" class="btn-start-container" for="">
+        <button class="btn-start" onclick="startGame()">START</button>
+    </lable>
+    
+    <svg style="display: none">
+        <symbol id="svg-btn">
+            <path d="M107.791 181.108C115.297 144.294 144.294 115.297 181.108 107.79C186.12 106.768 190 102.535 190 97.4193V10.5045C190 4.78853 185.208 0.211573 179.522 0.789528C85.2849 10.3671 10.3674 85.2847 0.789551 179.522C0.211594 185.208 4.78856 190 10.5045 190H97.4195C102.535 190 106.769 186.12 107.791 181.108Z"/>
+        </symbol>
+    </svg>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

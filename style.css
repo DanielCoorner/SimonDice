@@ -1,0 +1,145 @@
+/*--------------------------------------------------------------
+
+>>> TABLE OF CONTENT <<<
+
+    0. Variables
+    1. CSS Reset
+    3. Components
+    4. Document Setup
+
+/*----------------------- 0. Variables -----------------------*/
+
+:root {
+    --color-text: #FFF;
+    --color-background: #1F1F1F;
+    --color-green: #38D13B;
+    --color-red: #F82311;
+    --color-blue: #007CE0;
+    --color-yellow: #FCF217;
+}
+
+
+/*----------------------- 1. CSS Reset -----------------------*/
+
+*, *::before, *::after { box-sizing: border-box }
+
+html {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+
+/*---------------------- 2. Components -----------------------*/
+.btns-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn {
+    width: 190px;
+    height: 190px;
+}
+.btn > use {
+    cursor: pointer;
+}
+
+.btn-container:nth-of-type(1) .btn {
+    margin-left: auto;
+    margin-top: auto;
+}
+.btn-container:nth-of-type(2) .btn {
+    transform: rotate(90deg);
+    margin-top: auto;
+}
+.btn-container:nth-of-type(3) .btn {
+    transform: rotate(270deg);
+    margin-left: auto;
+}
+.btn-container:nth-of-type(4) .btn {
+    transform: rotate(180deg);
+}
+
+.btn-green {
+    fill: #38D13B;
+}
+.btn-container.light .btn-green {
+    fill: #6BFF6E;
+}
+.btn-red {
+    fill: #F82311;
+}
+.btn-container.light .btn-red {
+    fill: #FF7468;
+}
+.btn-yellow {
+    fill: #FCF217;
+}
+.btn-container.light .btn-yellow {
+    fill: #FFF974;
+}
+.btn-blue {
+    fill: #007CE0;
+}
+.btn-container.light .btn-blue {
+    fill: #60B8FF;
+}
+
+.btn-start-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+.btn-start {
+    height: 50px;
+    background-color: transparent;
+    color: var(--color-text);
+    border: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.4rem;
+    cursor: pointer;
+    align-self: center;
+}
+.btn-start:focus {
+    outline-style: none;
+}
+.btn-start:active {
+    color: forestgreen;
+}
+
+@media (max-width: 633.333333px) {
+    .btns-container {
+        grid-gap: 3.15789vw;
+    }
+    .btn {
+        width: 30vw;
+        height: 30vw;
+    }
+    .btn-start {
+        font-size: 6.063156vw;
+    }
+}
+
+/*-------------------- 3. Document Setup ---------------------*/
+/*------------------- 4. Auxiliary classes -------------------*/
+
+.hide {
+    display: none;
+}
+
+/*------------------------------------------------------------*/
