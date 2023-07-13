@@ -1,4 +1,4 @@
 # Simon says
-Useful for practicing basic JavaScript syntax.
+Practicing basic JavaScript syntax.
 
 You can try it [**here**](https://DanniScript.github.io/SimonSays/)
